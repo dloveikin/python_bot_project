@@ -1,0 +1,13 @@
+# ignore ALL files in ANY directory
+venv/Lib/
+venv/Scripts/
+venv/Include/
+
+# file: ~/.gitignore_global
+.idea/*
+
+venv/pyvenv.cfg
+venv/App/__pycache__/
+
+# ignore telegram token key
+App/token_key.py
