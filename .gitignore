@@ -10,4 +10,4 @@ venv/pyvenv.cfg
 venv/App/__pycache__/
 
 # ignore telegram token key
-App/token_key.py
+venv/App/token_key.py
