@@ -1,5 +1,6 @@
 from aiogram import types, Dispatcher
-from bot_config import dp, bot
+from App.bot_config import dp, bot
+from bot_keyboard.client_keyboards import kb_cl
 
 async def command_start(message: types.Message):
     sending_message = f'''
@@ -7,7 +8,8 @@ async def command_start(message: types.Message):
 Я бот який допоможе тобі оформити твоє резюме.
 Твоє резюме буде складатися з данних, які ми з'ясуємо під час опитування.\n
 Після оптування готовий файл з ремюме можна буде завантажити.'''
-    await bot.send_message(message.chat.id, sending_message, parse_mode="html")
+    await bot.send_message(message.chat.id, sending_message, parse_mode="html", reply_markup=kb_cl)
+
 
 
 

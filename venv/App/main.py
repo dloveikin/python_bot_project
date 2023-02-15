@@ -1,4 +1,4 @@
-from bot_config import dp, Dispatcher
+from bot_config import dp
 from aiogram.utils import executor
 import logging
 
@@ -8,11 +8,12 @@ logging.basicConfig(level=logging.INFO)
 
 # future connection to database
 async def on_starup(_):
-    print("\033[1;32m BOT ONLINE SUCCESSFULLY")
+    print("\033[1;32m === BOT ONLINE SUCCESSFULLY ===")
 
-from client import *
 
-register_handlers_client(dp)
+from bot_handlers import client_handler
+
+client_handler.register_handlers_client(dp)
 
 
 if __name__ == '__main__':

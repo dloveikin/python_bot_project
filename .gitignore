@@ -1,4 +1,4 @@
-# ignore ALL files in ANY directory
+# ignore ALL files in directory
 venv/Lib/
 venv/Scripts/
 venv/Include/
@@ -7,7 +7,7 @@ venv/Include/
 .idea/*
 
 venv/pyvenv.cfg
-venv/App/__pycache__/
+venv/App/__pycache__/*
 
 # ignore telegram token key
 venv/App/token_key.py
